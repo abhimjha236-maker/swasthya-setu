@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="setuTeal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D9488" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="setuAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#14B8A6" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0D9488" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Logo Icon Container -->
+  <g transform="translate(10, 10)">
+    <!-- Outer Shield / Healthcare Rounded Container -->
+    <rect x="0" y="0" width="100" height="100" rx="24" fill="#F0FDFA" stroke="#CCFBF1" stroke-width="2"/>
+    
+    <!-- Pulse Line / Setu Bridge Arch -->
+    <path d="M 18 64 C 32 40, 68 40, 82 64" fill="none" stroke="url(#setuTeal)" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Medical Cross with bridge integration -->
+    <path d="M 50 24 L 50 76 M 28 50 L 72 50" fill="none" stroke="#0F766E" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Rural Sprout / Leaf of wellness -->
+    <path d="M 50 48 C 65 35, 78 40, 80 25 C 65 24, 52 35, 50 48 Z" fill="#10B981" filter="url(#softGlow)"/>
+
+    <!-- Pulse Dot Nodes (Continuity) -->
+    <circle cx="20" cy="64" r="5" fill="#0D9488"/>
+    <circle cx="50" cy="24" r="4.5" fill="#14B8A6"/>
+    <circle cx="80" cy="64" r="5" fill="#10B981"/>
+  </g>
+
+  <!-- Typography: SWASTHYA SETU -->
+  <g transform="translate(125, 20)">
+    <!-- Main Title -->
+    <text x="0" y="44" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-weight="800" font-size="34" fill="#0F172A" letter-spacing="-0.5">
+      SWASTHYA <tspan fill="url(#setuTeal)">SETU</tspan>
+    </text>
+
+    <!-- Subtitle / Tagline -->
+    <text x="2" y="68" font-family="'Inter', sans-serif" font-weight="600" font-size="12.5" fill="#0F766E" letter-spacing="1.2">
+      RURAL PUBLIC HEALTHCARE CONTINUUM
+    </text>
+
+    <!-- Government of India / SIH Badge line -->
+    <g transform="translate(2, 77)">
+      <rect x="0" y="0" width="280" height="1.5" fill="#E2E8F0" rx="1"/>
+      <rect x="0" y="0" width="90" height="1.5" fill="url(#setuAccent)" rx="1"/>
+    </g>
+  </g>
+</svg>
